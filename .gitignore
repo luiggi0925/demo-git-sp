@@ -1,0 +1,7 @@
+.classpath
+.project
+.settings/
+notas.txt
+target/
+
+.DS_Store
