@@ -16,4 +16,11 @@ public class ServicioContador {
   public int contar() {
     return this.contador.incrementAndGet();
   }
+
+  public int descontar() {
+    if (this.contador.get() > 0) {
+      return this.contador.decrementAndGet();
+    }
+    return 0;
+  }
 }

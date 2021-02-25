@@ -14,4 +14,11 @@ public class ServicioContadorTest {
     int result = servicioContador.contar();
     assertEquals(1, result);
   }
+
+  @Test
+  public void testDescontar0() {
+    servicioContador = new ServicioContador();
+    int result = servicioContador.descontar();
+    assertEquals(0, result);
+  }
 }
