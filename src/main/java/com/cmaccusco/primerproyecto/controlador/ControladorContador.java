@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/contador")
 public class ControladorContador {
-
+  /**
+   * Servicio que sirve para mantener un contador de invocaciones.
+   */
   private final ServicioContador servicioContador;
 
   public ControladorContador(ServicioContador servicioContador) {
